@@ -1,0 +1,14 @@
+.avatar {
+  height: 70px;
+  width: 70px;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.avatar1 {
+  width: 100%;
+}

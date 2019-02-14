@@ -1,0 +1,25 @@
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+}
+.right {
+  border-left: 10px solid #000;
+}
+.left {
+  border-right: 10px solid #000;
+}
+
+.right:hover {
+  border-left-color: #c9c9c9;
+}
+
+.left:hover {
+  border-right-color: #c9c9c9;
+}
+
+.arrow:hover {
+  transition: border-color 1s;
+}

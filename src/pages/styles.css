@@ -1,0 +1,34 @@
+@import '../../node_modules/reset-css/reset.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1140px;
+  min-width: 100%;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  border: 1px solid #000;
+}
+
+.select {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 10px;
+}
