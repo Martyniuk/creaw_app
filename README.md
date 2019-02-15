@@ -27,7 +27,7 @@ Project set up:
 
 Additional information:
 - folders structure is opinionated about DDD approach
-- no Test were written due to busyness required by current job, but examples can be found on another [project](https://github.com/Martyniuk/pet_redux_intensive)
+- filtering implemented only by name and no Tests were written due to busyness required by current job(examples can be found on another [project](https://github.com/Martyniuk/pet_redux_intensive))
 - for the same reason prop-types validation was omitted too
 - on first look project seems to be simple, but there were some cases when I was regretting in not using Redux
 - obviously would be great to have time for refactoring, so dont be strict judge 
