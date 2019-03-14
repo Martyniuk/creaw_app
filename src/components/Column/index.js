@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 
+import Styles from './styles.css';
 import { Card } from '../../components/Card';
 
-import Styles from './styles.css';
-
-class Applied extends Component {
+class Column extends Component {
     render () {
-        const { users, updateStatus } = this.props;
+        const { users, updateStatus, columnTitle } = this.props;
 
         return (
             <div className = { Styles.container }>
-                <h3 className = { Styles.header }>Applied</h3>
+                <h3 className = { Styles.header }>{ columnTitle }</h3>
                 <div className = { Styles.wrapper }>
                     {users.map(user => (
                         <Card
@@ -25,4 +24,4 @@ class Applied extends Component {
     }
 }
 
-export { Applied };
+export { Column };
