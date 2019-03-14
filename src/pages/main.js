@@ -8,9 +8,7 @@ import {
     checkStorage,
     modifyUsersList
 } from '../utils/helpers';
-import { Applied } from '../domain/Applied';
-import { Hired } from '../domain/Hired';
-import { Interviewing } from '../domain/Interviewing';
+import { Column } from '../components/Column';
 
 class Main extends PureComponent {
     constructor (props) {
@@ -30,7 +28,7 @@ class Main extends PureComponent {
 
     fetchUsers = async () => {
         try {
-            const response = await fetch('');
+            const response = await fetch('https://randomuser.me/api/?nat=gb&results=5');
             const data = await response.json();
 
             if (data) {
@@ -214,15 +212,18 @@ class Main extends PureComponent {
                         'No matches found, all users are listed below'}
                 </div>
                 <div className = { Styles.wrapper }>
-                    <Applied
+                    <Column
+                        columnTitle = "Applied"
                         users = { appliedUsers }
                         updateStatus = { this.updateUserStatus }
                     />
-                    <Interviewing
+                    <Column
+                        columnTitle = "Interviewing"
                         users = { interviewingUsers }
                         updateStatus = { this.updateUserStatus }
                     />
-                    <Hired
+                    <Column
+                        columnTitle = "Hired"
                         users = { hiredUsers }
                         updateStatus = { this.updateUserStatus }
                     />
